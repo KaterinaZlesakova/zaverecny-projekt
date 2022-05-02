@@ -1,0 +1,1 @@
+Pracuji v Sassu - tj. vždycky, když budu dělat změny v scss, tak musím mít zapnuto watch sass; změny provádím pouze v scss souboru

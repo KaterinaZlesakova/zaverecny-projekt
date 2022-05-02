@@ -1,0 +1,121 @@
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+/* mobile first */
+/* mobil: do 750px, nad 750px PC */
+/* barvy
+
+šedá:               #ECEAE9;
+modrá azurová       #357DED;
+světlejší modrá:    #99D5FF;
+černá:              #000000;
+bílá:               #ffffff
+*/
+
+$azur: #357DED;
+$modra: #99D5FF;
+$cerna: #000000;
+$bila: #ffffff;
+$seda:  #ECEAE9;
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $bila;
+}
+
+
+.menu {
+    display: flex;
+}
+
+.menu__list {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.menu__item {
+	flex-shrink: 1;
+    padding: 15px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu__item:hover {
+    background-color: $azur;
+    color: $bila;
+}
+
+.header__item {
+    text-align: center;
+}
+
+.header__item::after {
+    content: "";
+	display: block;
+	width: 200px;
+	height: 3px;
+	background-color: $azur;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.menu__link,
+.footer__link {
+    text-decoration: none;
+
+}
+
+.footer {
+    display: flex;
+    background-color: $azur;
+    color: $bila;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.footer__item {
+    color: $bila;
+    text-decoration: none;
+    flex-shrink: 1;
+    padding: 15px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.footer:hover {
+
+}
+
+.footer__copyright {
+    align-content: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.footer__list {
+    list-style-type: none;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+    margin: 0;
+	padding-left: 0;
+    flex-basis: 100%;
+    justify-content: space-around;
+}
+
+.middle {
+    border: 2px solid $azur;
+    padding: 10px;
+}
+
+.header__second {
+    text-align: center;
+}
