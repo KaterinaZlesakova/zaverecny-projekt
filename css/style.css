@@ -165,7 +165,7 @@ body {
 .uvod__fotogalerie,
 .uvod__kontakt {
   display: block;
-  /* max-width: 750px; */
+  max-width: 750px;
   -o-object-fit: cover;
      object-fit: cover;
   padding: 20px;
@@ -209,7 +209,7 @@ body {
 .foto__rozvrh,
 .foto__fotogalerie,
 .foto__kontakt {
-  width: 100px;
+  width: 100%;
 }
 
 .foto__ocentru:hover .foto__description-ocentru {
