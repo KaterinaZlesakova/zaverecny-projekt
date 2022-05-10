@@ -171,7 +171,7 @@ body {
 .uvod__fotogalerie,
 .uvod__kontakt {
     display: block;
-    max-width: 750px;
+    /* max-width: 750px; */
     object-fit: cover;
     padding: 20px;
     margin: auto;
@@ -181,7 +181,6 @@ body {
 
 
 .middle .foto__ocentru {
-    /* max-width: 100px; */
     height: auto;
     display: block;
     transition: transform 0.5s;
@@ -231,20 +230,20 @@ body {
     border: 2px solid $azur;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
+    grid-template-columns: 5fr 2fr 2fr;
+    grid-template-rows: repeat(3, auto);
+    /* grid-template-areas: 
     "centrum kurzy rozvrh"
     "centrum fotogalerie fotogalerie"
-    "kontakt kontakt kontakt";
-    gap: 20px;
+    "kontakt kontakt kontakt"; */
+    gap: 10px;
 }
 
-/* .uvod__ocentru {
+.uvod__ocentru {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 3;
 }
 
 .uvod__kurzy {
@@ -263,18 +262,19 @@ body {
 
 .uvod__fotogalerie {
     grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
     grid-row-end: 4;
 }
 
 .uvod__kontakt {
-    grid-column-start: 1 span;
-    grid-row-start: 3 span;
-}  */
+    grid-column: 1 -1;
+    grid-row: 3 span;
+} 
 
 /* .uvod__ocentru {
     grid-area: centrum;
+
 }
 
 .uvod__kurzy {
