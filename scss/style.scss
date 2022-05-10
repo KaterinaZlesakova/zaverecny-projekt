@@ -51,6 +51,10 @@ body {
     color: $bila; /* TOTO Z NĚJAKÉHO ZÁHADNÉHO DŮVODU NEFUNGUJE - CHCI, ABY PŘI NAJETÍ SE ZBARVILY POLOŽKY - BARVA PÍSMA NA BÍLOU */
 }
 
+.menu__lista:hover {
+    color: $bila;
+}
+
 .header__item {
     text-align: center;
 }
@@ -163,21 +167,25 @@ body {
     border: 1px solid black;
 }
 
-.uvod__image {
-    width: 100%;
-    flex-basis: 100%;
+/* OBRÁZKY, KTERÝM SE ZOBRAZÍ POPISEK */
+
+.uvod__ocentru,
+.uvod__kurzy,
+.uvod__rozvrh,
+.uvod__fotogalerie,
+.uvod__kontakt {
+    display: block;
+    width: 300px;
     margin: auto;
     position: relative; //ukradnuto
     overflow: hidden;//ukradnuto
-
 }
 
-.foto__image {
-    width: 100%;
+.middle .foto__ocentru {
+    /* max-width: 100px; */
     height: auto;
     display: block; //ukradnuto
     transition: transform 0.5s; //ukradnuto
-
 }
 
 .foto__description { //komplet ukradnuto
@@ -190,27 +198,30 @@ body {
     top: 100%;
     width: 100%;
     transition: transform 0.5s;
-
 }
 
-.fotopopisek {
+.foto__popisek-ocentru,
+.foto__popisek-kurzy,
+.foto__popisek-rozvrh,
+.foto__popisek-fotogalerie,
+.foto__popisek-kontakt {
     margin: 0;
 }
 
-.foto__image:hover .foto__description {
-    transform: translateY(-200%);
+.foto__ocentru:hover .foto__popisek-ocentru {
+    transform: translateY(-100%);
 }
 
-.foto__image:hover .foto__image {
+.foto__ocentru:hover .foto__ocentru {
     transform: scale(1.1);
 }
-
 
 .middle {
     border: 2px solid $azur;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat (3, 1fr);
+    grid-template-columns: 300px 100px 100px;
+    grid-template-rows: 300px 100px 100px;
     grid-template-areas: 
     "centrum kurzy rozvrh"
     "centrum fotogalerie fotogalerie"
