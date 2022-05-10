@@ -173,7 +173,7 @@ body {
 }
 
 .foto__image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block; //ukradnuto
     transition: transform 0.5s; //ukradnuto
@@ -193,8 +193,12 @@ body {
 
 }
 
+.fotopopisek {
+    margin: 0;
+}
+
 .foto__image:hover .foto__description {
-    transform: translateY(-100%);
+    transform: translateY(-200%);
 }
 
 .foto__image:hover .foto__image {
@@ -206,6 +210,30 @@ body {
     border: 2px solid $azur;
     padding: 10px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-areas: 
+    "centrum kurzy rozvrh"
+    "centrum fotogalerie fotogalerie"
+    "kontakt kontakt kontakt";
+    gap: 20px;
+}
+
+.uvod__ocentru {
+    grid-area: centrum;
+}
+
+.uvod__kurzy {
+    grid-area: kurzy;
+}
+
+.uvod__rozvrh {
+    grid-area: rozvrh;
+}
+
+.uvod__fotogalerie {
+    grid-area: fotogalerie;
+}
+
+.uvod__kontakt {
+    grid-area: kontakt;
 }
