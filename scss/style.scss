@@ -39,6 +39,10 @@ body {
     justify-content: space-around;
 }
 
+.menu__link:hover {
+    color: $bila;
+}
+
 .menu__item {
 	flex-shrink: 1;
     padding: 15px;
@@ -72,10 +76,14 @@ body {
 }
 
 .footer {
-    display: flex;
     background-color: $azur;
     color: $bila;
     justify-content: space-between;
+
+    @media screen and (min-width: 750px) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
 
 .footer__items {
@@ -102,7 +110,10 @@ body {
 
 .footer__copyright {
     align-content: center;
+    text-align: center;
     padding: 20px;
+
+
 }
 
 .footer__list {
@@ -180,7 +191,11 @@ body {
 }
 
 
-.middle .foto__ocentru {
+.uvod .foto__ocentru,
+.uvod .foto__kurzy,
+.uvod .foto__rozvrh,
+.uvod .foto__fotogalerie,
+.uvod .foto__kontakt {
     height: auto;
     display: block;
     transition: transform 0.5s;
@@ -210,86 +225,81 @@ body {
     text-align: center;
 }
 
-.foto__ocentru,
-.foto__kurzy,
-.foto__rozvrh,
-.foto__fotogalerie,
-.foto__kontakt {
+.fotouvod {
     width: 100%;
+    border: 2px solid $azur;
 }
 
 .foto__ocentru:hover .foto__description-ocentru {
     transform: translateY(-100%);
 }
 
-.foto__ocentru:hover .foto__ocentru {
-    transform: scale(1.1);
+.uvod__ocentru:hover .foto__ocentru {
+    transform: scale(1.2);
 }
 
-.middle {
-    border: 2px solid $azur;
+.uvod__kurzy:hover .foto__kurzy {
+    transform: scale(1.2);
+}
+
+.uvod__rozvrh:hover .foto__rozvrh {
+    transform: scale(1.2);
+}
+
+.uvod__fotogalerie:hover .foto__fotogalerie {
+    transform: scale(1.2);
+}
+
+.uvod__kontakt:hover .foto__kontakt {
+    transform: scale(1.2);
+}
+
+
+.uvod {
+    margin: auto;
     padding: 10px;
-    display: grid;
-    grid-template-columns: 5fr 2fr 2fr;
-    grid-template-rows: repeat(3, auto);
-    /* grid-template-areas: 
-    "centrum kurzy rozvrh"
-    "centrum fotogalerie fotogalerie"
-    "kontakt kontakt kontakt"; */
-    gap: 10px;
+    background: linear-gradient($azur, $modra, $seda);
+
+    @media screen and (min-width: 750px) {
+        border: 2px solid $azur;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 10px;
+
+        .uvod__ocentru {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        
+        .uvod__kurzy {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        
+        .uvod__rozvrh {
+            grid-column-start: 5;
+            grid-column-end: 7;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        
+        .uvod__fotogalerie {
+            grid-column-start: 4;
+            grid-column-end: 7;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        
+        .uvod__kontakt {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        } 
+    }
 }
-
-.uvod__ocentru {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
-.uvod__kurzy {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.uvod__rozvrh {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.uvod__fotogalerie {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
-}
-
-.uvod__kontakt {
-    grid-column: 1 -1;
-    grid-row: 3 span;
-} 
-
-/* .uvod__ocentru {
-    grid-area: centrum;
-
-}
-
-.uvod__kurzy {
-    grid-area: kurzy;
-}
-
-.uvod__rozvrh {
-    grid-area: rozvrh;
-}
-
-.uvod__fotogalerie {
-    grid-area: fotogalerie;
-}
-
-.uvod__kontakt {
-    grid-area: kontakt;
-} */
-
