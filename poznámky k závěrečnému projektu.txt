@@ -1,1 +1,4 @@
 Pracuji v Sassu - tj. vždycky, když budu dělat změny v scss, tak musím mít zapnuto watch sass; změny provádím pouze v scss souboru
+Vytvořit stránku s recenzemi klientů, na kterou se dostanu po klinkutí na ikonu na stránce O centru - bude tam carousel s recenzemi
+Dobré by bylo vytvořit z rozvrhu prokliky na jednotlivé kurzy
+Vytvořit nějaký blog s příspěvky - novinkami o centru
