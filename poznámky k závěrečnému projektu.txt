@@ -3,3 +3,4 @@ Vytvořit stránku s recenzemi klientů, na kterou se dostanu po klinkutí na ik
 Dobré by bylo vytvořit z rozvrhu prokliky na jednotlivé kurzy
 Vytvořit nějaký blog s příspěvky - novinkami o centru
 https://www.zsnamestimiru.cz/krouzky/tvorba-webovych-stranek/
+https://www.azschola.cz/proc-zvolit-kurz-od-nas/
