@@ -258,6 +258,7 @@ body {
 .uvod {
     margin: auto;
     padding: 10px;
+<<<<<<< HEAD
     background: linear-gradient($azur, $modra, $seda);
 
     @media screen and (min-width: 750px) {
@@ -266,6 +267,72 @@ body {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(3, auto);
         gap: 10px;
+=======
+    display: grid;
+    grid-template-columns: 6fr 6fr 6fr;
+    grid-template-rows: auto 200px 200px;
+    /* grid-template-areas: 
+    "centrum kurzy rozvrh"
+    "centrum fotogalerie fotogalerie"
+    "kontakt kontakt kontakt"; */
+}
+
+.uvod__fotogalerie,
+.uvod__kontakt {
+    height: 200px;
+}
+
+.foto__fotogalerie,
+.foto__kontakt {
+object-fit: cover;
+}
+
+.uvod__ocentru {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.uvod__kurzy {
+    grid-column: 2 / 3;
+    grid-row: 1 / span 1;
+}
+
+.uvod__rozvrh {
+    grid-column: 3 / 4;
+    grid-row: 1 / span 1;
+}
+
+.uvod__fotogalerie {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+.uvod__kontakt {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+} 
+
+/* .uvod__ocentru {
+    grid-area: centrum;
+
+}
+
+.uvod__kurzy {
+    grid-area: kurzy;
+}
+
+.uvod__rozvrh {
+    grid-area: rozvrh;
+}
+
+.uvod__fotogalerie {
+    grid-area: fotogalerie;
+}
+
+.uvod__kontakt {
+    grid-area: kontakt;
+} */
+>>>>>>> 52dc00304de8ceb1d7ae026278f8f2fcc2f500dc
 
         .uvod__ocentru {
             grid-column-start: 1;
