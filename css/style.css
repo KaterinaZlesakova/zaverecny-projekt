@@ -35,6 +35,11 @@ body {
   flex-wrap: nowrap;
   justify-content: space-around;
 }
+@media screen and (max-width: 750px) {
+  .menu__list {
+    display: block;
+  }
+}
 
 .menu__link:hover {
   color: #ffffff;
@@ -122,6 +127,11 @@ body {
   flex-basis: 100%;
   justify-content: space-around;
   align-content: center;
+}
+@media screen and (max-width: 750px) {
+  .footer__list {
+    display: block;
+  }
 }
 
 .header__second {
@@ -303,5 +313,20 @@ body {
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
+  }
+}
+
+/* ROZVRH HODIN */
+.table__main {
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 750px) {
+  .table {
+    /* width: 100%;
+    overflow-y: auto;
+    overflow: auto;
+    margin: 0 0 1em; */
+    /* PŘIDAT NĚJAKOU UTILITKU, ABY FUNGOVAL ROZVRH A DALO SE JÍM PŘÍPADNĚ SCROLLOVAT */
   }
 }/*# sourceMappingURL=style.css.map */
