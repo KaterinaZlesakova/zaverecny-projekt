@@ -24,6 +24,14 @@ body {
 
 .menu {
   display: flex;
+  margin: 20px auto;
+}
+
+.header {
+  /* background: linear-gradient($azur, $modra, $seda); */
+  background-color: #92cbf3;
+  padding: 50px;
+  margin: 0px auto;
 }
 
 .menu__list {
@@ -66,7 +74,7 @@ body {
   content: "";
   display: block;
   width: 200px;
-  height: 3px;
+  height: 5px;
   background-color: #357DED;
   margin: auto;
   margin-top: 10px;
@@ -266,13 +274,14 @@ body {
 }
 
 .uvod {
-  margin: 20px auto;
+  margin: 0px auto 20px auto;
   padding: 10px;
   background: linear-gradient(#357DED, #99D5FF, #ECEAE9);
 }
 @media screen and (max-width: 750px) {
   .uvod {
     padding: 10px;
+    border: 2px solid #357DED;
     background: linear-gradient(#357DED, #99D5FF, #ECEAE9);
   }
 }

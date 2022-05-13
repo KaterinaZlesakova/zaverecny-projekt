@@ -12,11 +12,12 @@ světlejší modrá:    #99D5FF;
 bílá:               #ffffff
 */
 
-$azur: #357DED;
-$modra: #99D5FF;
-$cerna: #000000;
-$bila: #ffffff;
-$seda:  #ECEAE9;
+$azur:         #357DED;
+$modra:        #99D5FF;
+$cerna:        #000000;
+$bila:         #ffffff;
+$seda:         #ECEAE9;
+$doplnkova:    #92cbf3;
 
 
 body {
@@ -24,9 +25,16 @@ body {
     background-color: $bila;
 }
 
-
 .menu {
     display: flex;
+    margin: 20px auto;
+}
+
+.header {
+    /* background: linear-gradient($azur, $modra, $seda); */
+    background-color: $doplnkova;
+    padding: 50px;
+    margin: 0px auto;
 }
 
 .menu__list {
@@ -67,7 +75,7 @@ body {
     content: "";
 	display: block;
 	width: 200px;
-	height: 3px;
+	height: 5px;
 	background-color: $azur;
     margin: auto;
     margin-top: 10px;
@@ -271,13 +279,14 @@ body {
 
 
 .uvod {
-    margin: 20px auto;
+    margin: 0px auto 20px auto;
     padding: 10px;
     background: linear-gradient($azur, $modra, $seda);
 
     @media screen and (max-width: 750px) {
         
         padding: 10px;
+        border: 2px solid $azur;
         background: linear-gradient($azur, $modra, $seda);
     }
 
