@@ -203,6 +203,7 @@ body {
 .fotouvod {
     width: 100%;
     border: 2px solid $azur;
+    max-height: 350px;
 }
 .uvod__ocentru:hover .foto__ocentru {
     transform: scale(1.2);
@@ -233,20 +234,22 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     position: absolute;
-    left: 35px;
+    left: 0px;
     bottom: 22px;
-    width: 90%;
+    width: 100%;
     align-items: center;
-    transition: transform 0.5s;
     display: none;
 }
 
-.foto__ocentru:hover .foto__description-ocentru,
-.foto__kurzy:hover .foto__description-kurzy,
-.foto__rozvrh:hover .foto__description-rozvrh,
-.foto__fotogalerie:hover .foto__description-fotogalerie,
-.foto__kontakt:hover .foto__description-kontakt {
-    transform: translateY(-100%);
+.uvod__ocentru:hover .foto__description-ocentru,
+.uvod__kurzy:hover .foto__description-kurzy,
+.uvod__rozvrh:hover .foto__description-rozvrh,
+.uvod__fotogalerie:hover .foto__description-fotogalerie,
+.uvod__kontakt:hover .foto__description-kontakt {
+    transform: translateY(10%);
+    transform: scale(1.1);
+    display: block;
+    transition-delay: 0.5s;
 }
 
 .foto__popisek-ocentru,
@@ -260,9 +263,15 @@ body {
 
 
 .uvod {
-    margin: auto;
+    margin: 20px auto;
     padding: 10px;
     background: linear-gradient($azur, $modra, $seda);
+
+    @media screen and (max-width: 750px) {
+        
+        padding: 10px;
+        background: linear-gradient($azur, $modra, $seda);
+    }
 
     @media screen and (min-width: 750px) {
         border: 2px solid $azur;
