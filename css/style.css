@@ -356,8 +356,14 @@ body {
   flex-basis: 100%;
 }
 
+.icons {
+  justify-content: space-between;
+}
+
 .icons__div {
   background-color: #ECEAE9;
   margin: 10px;
   max-height: 200px;
+  flex-shrink: 1;
+  flex-basis: calc(100% - 30px);
 }/*# sourceMappingURL=style.css.map */

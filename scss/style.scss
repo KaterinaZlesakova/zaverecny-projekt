@@ -362,13 +362,18 @@ body {
 .icons__right {
     padding: 20px;
 }
-
 .icons__header {
     flex-basis: 100%;
+}
+
+.icons {
+    justify-content: space-between;
 }
 
 .icons__div {
     background-color: $seda;
     margin: 10px;
     max-height: 200px;
+    flex-shrink: 1;
+    flex-basis: calc(100% - 30px);
 }
