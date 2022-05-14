@@ -203,6 +203,8 @@ body {
     padding: 20px;
     margin: auto;
     position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -211,7 +213,6 @@ body {
 .uvod .foto__rozvrh,
 .uvod .foto__fotogalerie,
 .uvod .foto__kontakt {
-    height: auto;
     display: block;
     transition: transform 0.5s;
 }
@@ -219,7 +220,7 @@ body {
 .fotouvod {
     width: 100%;
     border: 2px solid $azur;
-    max-height: 350px;
+    max-height: 300px;
 }
 .uvod__ocentru:hover .foto__ocentru {
     transform: scale(1.2);
@@ -250,10 +251,9 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     position: absolute;
-    left: 0px;
-    bottom: 22px;
-    width: 100%;
-    align-items: center;
+    left: 25px;
+    bottom: 0px;
+    width: 90%;
     display: none;
 }
 
@@ -278,6 +278,15 @@ body {
     border: 1px solid transparent;
 }
 
+.foto__ocentru {
+    min-height: 300px;
+}
+
+.foto__fotogalerie,
+.foto__kontakt {
+    min-width: 350px;
+}
+
 
 .uvod {
     margin: 0px auto 20px auto;
@@ -299,15 +308,15 @@ body {
         gap: 10px;
 
         .uvod__ocentru {
-            grid-column-start: 1;
-            grid-column-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 5;
             grid-row-start: 1;
             grid-row-end: 2;
         }
         
         .uvod__kurzy {
-            grid-column-start: 3;
-            grid-column-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 3;
             grid-row-start: 1;
             grid-row-end: 2;
         }
@@ -340,6 +349,7 @@ body {
 
 .table__main {
     font-family: 'Roboto', sans-serif;
+    font-size: 24px;
 }
 
 .table {
