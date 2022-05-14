@@ -278,11 +278,6 @@ body {
   min-height: 300px;
 }
 
-.foto__fotogalerie,
-.foto__kontakt {
-  min-width: 350px;
-}
-
 .uvod {
   margin: 0px auto 20px auto;
   padding: 10px;
@@ -349,4 +344,20 @@ body {
     margin: 0 0 1em; */
     /* PŘIDAT NĚJAKOU UTILITKU, ABY FUNGOVAL ROZVRH A DALO SE JÍM PŘÍPADNĚ SCROLLOVAT */
   }
+}
+
+/* O CENTRU - IKONKY */
+.icons__pic,
+.icons__right {
+  padding: 20px;
+}
+
+.icons__header {
+  flex-basis: 100%;
+}
+
+.icons__div {
+  background-color: #ECEAE9;
+  margin: 10px;
+  max-height: 200px;
 }/*# sourceMappingURL=style.css.map */
