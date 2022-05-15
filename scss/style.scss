@@ -181,7 +181,8 @@ body {
 }
 
 .table__main {
-    
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 .table__head {
@@ -191,6 +192,14 @@ body {
 .table__rows,
 .table__header {
     border: 1px solid black;
+}
+
+.table__header {
+    padding: 5px;
+}
+
+.table__rows {
+    padding: 20px;
 }
 
 /* OBRÁZKY, KTERÝM SE ZOBRAZÍ POPISEK */
@@ -258,6 +267,11 @@ body {
     bottom: 0px;
     width: 90%;
     display: none;
+}
+
+.foto__description--klik {
+    text-decoration: none;
+    color: $bila;
 }
 
 .uvod__ocentru:hover .foto__description-ocentru,
