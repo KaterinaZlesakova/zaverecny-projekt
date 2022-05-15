@@ -4,3 +4,5 @@ Dobré by bylo vytvořit z rozvrhu prokliky na jednotlivé kurzy
 Vytvořit nějaký blog s příspěvky - novinkami o centru
 https://www.zsnamestimiru.cz/krouzky/tvorba-webovych-stranek/
 https://www.azschola.cz/proc-zvolit-kurz-od-nas/
+
+POZOR - VŠUDE, KDE SE ODKAZUJEME NA JINÉ STRÁNKY ČI NA OBRÁZKY, JE TŘEBA TYTO ODKAZY ZAČÍNÁT S / NA ZAČÁTKU

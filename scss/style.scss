@@ -84,7 +84,6 @@ body {
 .menu__link,
 .footer__link {
     text-decoration: none;
-
 }
 
 .footer {
@@ -179,6 +178,10 @@ body {
     margin-bottom: 20px;
     margin-left: auto; 
     margin-right: auto;
+}
+
+.table__main {
+    
 }
 
 .table__head {
@@ -362,18 +365,41 @@ body {
 .icons__right {
     padding: 20px;
 }
+
 .icons__header {
     flex-basis: 100%;
+    font-size: 24px;
 }
 
 .icons {
     justify-content: space-between;
 }
 
-.icons__div {
+.icons__div--levy,
+.icons__div--prostredni,
+.icons__div--pravy {
+    display: flex;
     background-color: $seda;
-    margin: 10px;
     max-height: 200px;
-    flex-shrink: 1;
-    flex-basis: calc(100% - 30px);
+    flex: 0 1 calc(100% - 20px);
 }
+
+.icons__div--levy {
+    margin: 10px 10px 10px 0;
+}
+
+.icons__div--prostredni {
+    margin: 10px;
+}
+
+.icons__div--pravy {
+    margin: 10px 0 10px 10px;
+}
+
+.lectors__header {
+    color: $modra;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 24px;
+}
+
