@@ -1,0 +1,27 @@
+---
+layout: page.njk
+title: 
+---
+
+<article class="course">
+
+	<h1 class="course__title">{{ title }}</h1>
+
+	<div class="course__content">
+
+		<div class="course__text">
+
+			<p class="course__perex">{{ perex }}</p>
+
+			{{ content | safe }}
+
+		</div>
+
+		<img class="course__image" src="/images/{{ foto }}" alt="Anglický jazyk">
+
+	</div>
+
+</article>
+
+    {{ content | safe }}
+

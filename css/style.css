@@ -486,4 +486,37 @@ body {
 .label__prvni,
 .label__druhy {
   flex: 1 1 100%;
+}
+
+.course__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course__text,
+.course__image {
+  flex: 1 1 50%;
+}
+
+.course__image {
+  max-width: 400px;
+  margin: 20px;
+}
+
+.course__text,
+.course__title {
+  margin: 20px;
+}
+
+.course__title {
+  text-align: center;
+}
+
+.course__perex {
+  font-weight: bold;
+  text-align: justify;
+}
+
+.course__text {
+  text-align: justify;
 }/*# sourceMappingURL=style.css.map */

@@ -6,3 +6,4 @@ https://www.zsnamestimiru.cz/krouzky/tvorba-webovych-stranek/
 https://www.azschola.cz/proc-zvolit-kurz-od-nas/
 
 POZOR - VŠUDE, KDE SE ODKAZUJEME NA JINÉ STRÁNKY ČI NA OBRÁZKY, JE TŘEBA TYTO ODKAZY ZAČÍNÁT S / NA ZAČÁTKU
+KOLEKCE - buďto tak, že uděláme kolekci z recenzí nebo z popisu jednotlivých kurzů
