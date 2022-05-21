@@ -1,0 +1,61 @@
+@use "main";
+
+.menu {
+    display: flex;
+    margin: 20px auto;
+}
+
+.header {
+    /* background: linear-gradient(main.$azur, main.$modra, main.$seda); */
+    background-color: main.$doplnkova;
+    padding: 50px;
+    margin: 0px auto;
+}
+
+.menu__list {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    @media screen and (max-width: 750px) {
+        display: block;
+    }
+}
+
+.menu__link:hover {
+    color: main.$bila;
+}
+
+.menu__item {
+	flex-shrink: 1;
+    padding: 15px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu__item:hover {
+    background-color: main.$azur;
+    color: main.$bila; /* TOTO Z NĚJAKÉHO ZÁHADNÉHO DŮVODU NEFUNGUJE - CHCI, ABY PŘI NAJETÍ SE ZBARVILY POLOŽKY - BARVA PÍSMA NA BÍLOU */
+}
+
+.header__item {
+    text-align: center;
+}
+
+.header__item::after {
+    content: "";
+	display: block;
+	width: 200px;
+	height: 5px;
+	background-color: main.$azur;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.menu__link {
+    text-decoration: none;
+}

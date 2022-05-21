@@ -1,94 +1,22 @@
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
-
-/* mobile first */
-/* mobil: do 750px, nad 750px PC */
-/* barvy
-
-šedá:               #ECEAE9;
-modrá azurová       #357DED;
-světlejší modrá:    #99D5FF;
-černá:              #000000;
-bílá:               #ffffff
-*/
-
-$azur:         #357DED;
-$modra:        #99D5FF;
-$cerna:        #000000;
-$bila:         #ffffff;
-$seda:         #ECEAE9;
-$doplnkova:    #92cbf3;
+@use "main";
+@use "header";
 
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: $bila;
+    background-color: main.$bila;
 }
 
-.menu {
-    display: flex;
-    margin: 20px auto;
-}
 
-.header {
-    /* background: linear-gradient($azur, $modra, $seda); */
-    background-color: $doplnkova;
-    padding: 50px;
-    margin: 0px auto;
-}
 
-.menu__list {
-	list-style-type: none;
-	margin: 0;
-	padding-left: 0;
-    flex-basis: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
 
-    @media screen and (max-width: 750px) {
-        display: block;
-    }
-}
-
-.menu__link:hover {
-    color: $bila;
-}
-
-.menu__item {
-	flex-shrink: 1;
-    padding: 15px;
-    flex-grow: 1;
-    text-align: center;
-}
-
-.menu__item:hover {
-    background-color: $azur;
-    color: $bila; /* TOTO Z NĚJAKÉHO ZÁHADNÉHO DŮVODU NEFUNGUJE - CHCI, ABY PŘI NAJETÍ SE ZBARVILY POLOŽKY - BARVA PÍSMA NA BÍLOU */
-}
-
-.header__item {
-    text-align: center;
-}
-
-.header__item::after {
-    content: "";
-	display: block;
-	width: 200px;
-	height: 5px;
-	background-color: $azur;
-    margin: auto;
-    margin-top: 10px;
-}
-
-.menu__link,
 .footer__link {
     text-decoration: none;
 }
 
 .footer {
-    background-color: $azur;
-    color: $bila;
+    background-color: main.$azur;
+    color: main.$bila;
     justify-content: space-between;
 
     @media screen and (min-width: 750px) {
@@ -98,7 +26,7 @@ body {
 }
 
 .footer__items {
-    color: $bila;
+    color: main.$bila;
     text-decoration: none;
     flex-shrink: 1;
     flex-grow: 1;
@@ -106,7 +34,7 @@ body {
 }
 
 .footer__item:hover {
-    background-color: white;
+    background-color: main.$bila;
 }
 
 .footer__item {
@@ -129,7 +57,7 @@ body {
 
 .footer__list {
     list-style-type: none;
-    color: white;
+    color: main.$bila;
     display: flex;
     flex-wrap: nowrap;
     flex-grow: 1;
@@ -186,12 +114,12 @@ body {
 }
 
 .table__head {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid main.$cerna;
 }
 
 .table__rows,
 .table__header {
-    border: 1px solid black;
+    border: 1px solid main.$cerna;
 }
 
 .table__header {
@@ -231,7 +159,7 @@ body {
 
 .fotouvod {
     width: 100%;
-    border: 2px solid $azur;
+    border: 2px solid main.$azur;
     max-height: 300px;
 }
 .uvod__ocentru:hover .foto__ocentru {
@@ -261,7 +189,7 @@ body {
 .foto__description-kontakt {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: main.$bila;
     position: absolute;
     left: 25px;
     bottom: 0px;
@@ -271,7 +199,7 @@ body {
 
 .foto__description--klik {
     text-decoration: none;
-    color: $bila;
+    color: main.$bila;
 }
 
 .uvod__ocentru:hover .foto__description-ocentru,
@@ -302,17 +230,17 @@ body {
 .uvod {
     margin: 0px auto 20px auto;
     padding: 10px;
-    background: linear-gradient($azur, $modra, $seda);
+    background: linear-gradient(main.$azur, main.$modra, main.$seda);
 
     @media screen and (max-width: 750px) {
         
         padding: 10px;
-        border: 2px solid $azur;
-        background: linear-gradient($azur, $modra, $seda);
+        border: 2px solid main.$azur;
+        background: linear-gradient(main.$azur, main.$modra, main.$seda);
     }
 
     @media screen and (min-width: 750px) {
-        border: 2px solid $azur;
+        border: 2px solid main.$azur;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(3, auto);
@@ -393,7 +321,7 @@ body {
 .icons__div--prostredni,
 .icons__div--pravy {
     display: flex;
-    background-color: $seda;
+    background-color: main.$seda;
     max-height: 200px;
     flex: 0 1 calc(100% - 20px);
 }
@@ -411,7 +339,7 @@ body {
 }
 
 .lectors__header {
-    color: $modra;
+    color: main.$modra;
     text-decoration: underline;
     text-align: center;
     font-size: 24px;

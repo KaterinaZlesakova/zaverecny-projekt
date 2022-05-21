@@ -1,0 +1,25 @@
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+/* mobile first */
+/* mobil, tablet: do 750px, nad 750px PC */
+/* barvy
+
+šedá:               #ECEAE9;
+modrá azurová       #357DED;
+světlejší modrá:    #99D5FF;
+černá:              #000000;
+bílá:               #ffffff
+*/
+
+$azur:         #357DED;
+$modra:        #99D5FF;
+$cerna:        #000000;
+$bila:         #ffffff;
+$seda:         #ECEAE9;
+$doplnkova:    #92cbf3;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: main.$bila;
+}

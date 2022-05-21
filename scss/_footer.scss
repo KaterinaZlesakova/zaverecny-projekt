@@ -1,0 +1,64 @@
+@use "main";
+
+.footer__link {
+    text-decoration: none;
+}
+
+.footer {
+    background-color: main.$azur;
+    color: main.$bila;
+    justify-content: space-between;
+
+    @media screen and (min-width: 750px) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+.footer__items {
+    color: main.$bila;
+    text-decoration: none;
+    flex-shrink: 1;
+    flex-grow: 1;
+    
+}
+
+.footer__item:hover {
+    background-color: main.$bila;
+}
+
+.footer__item {
+    flex-shrink: 1;
+    flex-grow: 1;
+    text-align: center;
+    flex-basis: 100%;
+    padding: 15px;
+    margin: 5px;
+}
+
+
+.footer__copyright {
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+
+
+}
+
+.footer__list {
+    list-style-type: none;
+    color: main.$bila;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-basis: 100%;
+    margin: 0;
+	padding-left: 0;
+    flex-basis: 100%;
+    justify-content: space-around;
+    align-content: center;
+
+    @media screen and (max-width: 750px){
+        display: block;
+    }
+}

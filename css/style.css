@@ -8,7 +8,7 @@ html {
 }
 
 /* mobile first */
-/* mobil: do 750px, nad 750px PC */
+/* mobil, tablet: do 750px, nad 750px PC */
 /* barvy
 
 šedá:               #ECEAE9;
@@ -17,18 +17,13 @@ světlejší modrá:    #99D5FF;
 černá:              #000000;
 bílá:               #ffffff
 */
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #ffffff;
-}
-
 .menu {
   display: flex;
   margin: 20px auto;
 }
 
 .header {
-  /* background: linear-gradient($azur, $modra, $seda); */
+  /* background: linear-gradient(main.$azur, main.$modra, main.$seda); */
   background-color: #92cbf3;
   padding: 50px;
   margin: 0px auto;
@@ -80,7 +75,15 @@ body {
   margin-top: 10px;
 }
 
-.menu__link,
+.menu__link {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+
 .footer__link {
   text-decoration: none;
 }
@@ -105,7 +108,7 @@ body {
 }
 
 .footer__item:hover {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .footer__item {
@@ -125,7 +128,7 @@ body {
 
 .footer__list {
   list-style-type: none;
-  color: white;
+  color: #ffffff;
   display: flex;
   flex-wrap: nowrap;
   flex-grow: 1;
@@ -183,12 +186,12 @@ body {
 }
 
 .table__head {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
 }
 
 .table__rows,
 .table__header {
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
 
 .table__header {
@@ -258,7 +261,7 @@ body {
 .foto__description-kontakt {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: #ffffff;
   position: absolute;
   left: 25px;
   bottom: 0px;
