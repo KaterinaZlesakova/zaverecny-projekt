@@ -17,6 +17,17 @@ světlejší modrá:    #99D5FF;
 černá:              #000000;
 bílá:               #ffffff
 */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+
+.obsah {
+  margin: 0px auto 20px auto;
+  padding: 10px;
+  background: linear-gradient(#357DED, #99D5FF, #ECEAE9);
+}
+
 .menu {
   display: flex;
   margin: 20px auto;
@@ -77,11 +88,6 @@ bílá:               #ffffff
 
 .menu__link {
   text-decoration: none;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #ffffff;
 }
 
 .footer__link {
@@ -145,64 +151,6 @@ body {
   }
 }
 
-.header__second {
-  text-align: center;
-}
-
-.icons {
-  display: flex;
-}
-
-.icons__div {
-  display: flex;
-  flex-basis: 100%;
-}
-
-.icons__pic {
-  max-width: 30%;
-}
-
-.icons__text {
-  text-align: center;
-}
-
-.icons__right {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 100%;
-  text-align: center;
-}
-
-.table {
-  text-align: center;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.table__main {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.table__head {
-  border-bottom: 1px solid #000000;
-}
-
-.table__rows,
-.table__header {
-  border: 1px solid #000000;
-}
-
-.table__header {
-  padding: 5px;
-}
-
-.table__rows {
-  padding: 20px;
-}
-
-/* OBRÁZKY, KTERÝM SE ZOBRAZÍ POPISEK */
 .uvod__ocentru,
 .uvod__kurzy,
 .uvod__rozvrh,
@@ -351,23 +299,39 @@ body {
   }
 }
 
-/* ROZVRH HODIN */
-.table__main {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
+.header__second {
+  text-align: center;
 }
 
+.icons {
+  display: flex;
+}
 @media screen and (max-width: 750px) {
-  .table {
-    /* width: 100%;
-    overflow-y: auto;
-    overflow: auto;
-    margin: 0 0 1em; */
-    /* PŘIDAT NĚJAKOU UTILITKU, ABY FUNGOVAL ROZVRH A DALO SE JÍM PŘÍPADNĚ SCROLLOVAT */
+  .icons {
+    flex-wrap: wrap;
   }
 }
 
-/* O CENTRU - IKONKY */
+.icons__div {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.icons__pic {
+  max-width: 30%;
+}
+
+.icons__text {
+  text-align: center;
+}
+
+.icons__right {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  text-align: center;
+}
+
 .icons__pic,
 .icons__right {
   padding: 20px;
@@ -390,6 +354,13 @@ body {
   max-height: 200px;
   flex: 0 1 calc(100% - 20px);
 }
+@media screen and (max-width: 750px) {
+  .icons__div--levy,
+.icons__div--prostredni,
+.icons__div--pravy {
+    flex: 0 1 100%;
+  }
+}
 
 .icons__div--levy {
   margin: 10px 10px 10px 0;
@@ -408,4 +379,111 @@ body {
   text-decoration: underline;
   text-align: center;
   font-size: 24px;
+}
+
+.table {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table__main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table__head {
+  border-bottom: 1px solid #000000;
+}
+
+.table__rows,
+.table__header {
+  border: 1px solid #000000;
+}
+
+.table__header {
+  padding: 5px;
+}
+
+.table__rows {
+  padding: 20px;
+}
+
+/* ROZVRH HODIN */
+.table__main {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 750px) {
+  .table {
+    width: 100%;
+    overflow-y: auto;
+    overflow: auto;
+    margin: 0 0 1em;
+  }
+}
+
+.mapa {
+  margin: 50px;
+  margin-left: 100px;
+}
+
+.kontakt__list {
+  list-style-type: none;
+  margin: 50px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.kontakt__obsah {
+  display: flex;
+  margin: auto;
+}
+
+.mapa,
+.kontakt__list--right {
+  flex: 0 1 50%;
+}
+
+.kontakt__list--bold {
+  font-weight: bold;
+}
+
+.kontakt__formular {
+  margin: 50px;
+  margin-bottom: 50px;
+}
+
+.formular {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.odeslat {
+  margin-top: 30px;
+}
+
+.email {
+  margin-bottom: 20px;
+}
+
+.zprava {
+  /* margin-top: 30px; */
+}
+
+.label__e-mail,
+.label__zprava {
+  /* padding-right: 20px; */
+}
+
+.label__zprava {
+  /* padding-right: 54px; */
+}
+
+.label__prvni,
+.label__druhy {
+  flex: 1 1 100%;
 }/*# sourceMappingURL=style.css.map */

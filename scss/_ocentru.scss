@@ -1,0 +1,80 @@
+@use "main";
+
+
+.header__second {
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+
+    @media screen and (max-width: 750px) {
+        flex-wrap: wrap;
+    }
+}
+
+.icons__div {
+    display: flex;
+    flex-basis: 100%;
+}
+
+.icons__pic {
+    max-width: 30%;
+}
+
+.icons__text {
+    text-align: center;
+}
+
+.icons__right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.icons__pic,
+.icons__right {
+    padding: 20px;
+}
+
+.icons__header {
+    flex-basis: 100%;
+    font-size: 24px;
+}
+
+.icons {
+    justify-content: space-between;
+}
+
+.icons__div--levy,
+.icons__div--prostredni,
+.icons__div--pravy {
+    display: flex;
+    background-color: main.$seda;
+    max-height: 200px;
+    flex: 0 1 calc(100% - 20px);
+
+    @media screen and (max-width: 750px) {
+        flex: 0 1 100%;
+    }
+}
+
+.icons__div--levy {
+    margin: 10px 10px 10px 0;
+}
+
+.icons__div--prostredni {
+    margin: 10px;
+}
+
+.icons__div--pravy {
+    margin: 10px 0 10px 10px;
+}
+
+.lectors__header {
+    color: main.$modra;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 24px;
+}

@@ -21,5 +21,11 @@ $doplnkova:    #92cbf3;
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: main.$bila;
+    background-color: #ffffff;
+}
+
+.obsah {
+    margin: 0px auto 20px auto;
+    padding: 10px;
+    background: linear-gradient($azur, $modra, $seda);
 }

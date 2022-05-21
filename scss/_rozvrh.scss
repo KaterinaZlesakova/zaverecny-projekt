@@ -1,0 +1,48 @@
+@use "main";
+
+
+.table {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.table__main {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.table__head {
+    border-bottom: 1px solid main.$cerna;
+}
+
+.table__rows,
+.table__header {
+    border: 1px solid main.$cerna;
+}
+
+.table__header {
+    padding: 5px;
+}
+
+.table__rows {
+    padding: 20px;
+}
+
+/* ROZVRH HODIN */
+
+
+.table__main {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+.table {
+        @media screen and (max-width: 750px) {
+            width: 100%;
+            overflow-y: auto;
+            overflow: auto;
+            margin: 0 0 1em;
+    }
+}
