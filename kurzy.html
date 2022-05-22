@@ -7,18 +7,18 @@ title: Vzdělávací centrum Davida Zlesáka
 
 <h2 class="header__second">Nabízené kurzy</h2>
 
-<p>Seznam nabízených kurzů naleznete zde:</p>
+<p class="kurzy__seznam">Seznam nabízených kurzů naleznete zde:</p>
 
 {% for prispevek in collections.kurzy %}
 
 <div class="prispevek">
 
-    <img src="/images/{{prispevek.data.foto }}" alt="{{ prispevek.data.alt }}"
+    <img class="prispevek__minifoto" src="/images/{{prispevek.data.foto }}" alt="{{ prispevek.data.alt }}">
 
     <div class="prispevek__popis">
         <h5>{{ prispevek.data.title }}</h5>
-        <p>{{ prispevek.data.perex }}</p>
-        <p><a href="{{ prispevek.url }}">Celý popis kurzu naleznete zde</a></p>
+        <p class="prispevek__perex">{{ prispevek.data.perex }}</p>
+        <p><a class="prispevek__klik" href="{{ prispevek.url }}">Celý popis kurzu naleznete zde</a></p>
     </div>
 
 </div>

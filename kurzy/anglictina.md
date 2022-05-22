@@ -7,3 +7,16 @@ alt: Anglický jazyk
 tags: kurzy
 ---
 
+<div class="clanek">
+
+Anglický jazyk je nezbytnou součástí současného vzdělání. V našich kurzech vyučujeme anglický jazyk s důrazem na praktické použití.
+
+Kurz je vhodný pro studenty, kteří již mají základy anglického jazyka například ze školy, postačí úroveň A2 dle referenčního rámce SERR.
+
+- Rozsah kurzu: semestrální
+- Počet odučených hodin: 100
+- Kdy probíhá: pondělí od 14:00 do 17:45 (dvouhodinovka)
+- Cena: 5.000,- Kč
+
+</div>
+
