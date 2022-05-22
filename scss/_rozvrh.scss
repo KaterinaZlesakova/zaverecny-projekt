@@ -46,3 +46,17 @@
             margin: 0 0 1em;
     }
 }
+
+.table__rows--klik {
+    text-decoration: none;
+    color: main.$secondary;
+    font-size: 16px;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+
+.table__rows--klik:hover {
+    color: white;
+    background-color: main.$azur;
+}

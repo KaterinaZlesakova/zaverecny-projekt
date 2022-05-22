@@ -303,6 +303,17 @@ body {
   text-align: center;
 }
 
+.historie {
+  margin: auto;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.historie__text {
+  text-align: justify;
+}
+
 .icons {
   display: flex;
 }
@@ -324,6 +335,11 @@ body {
 .icons__text {
   text-align: center;
 }
+@media screen and (max-width: 750px) {
+  .icons__text {
+    margin-bottom: 0;
+  }
+}
 
 .icons__right {
   display: flex;
@@ -340,6 +356,11 @@ body {
 .icons__header {
   flex-basis: 100%;
   font-size: 24px;
+}
+@media screen and (max-width: 750px) {
+  .icons__header {
+    margin-bottom: 0;
+  }
 }
 
 .icons {
@@ -365,20 +386,71 @@ body {
 .icons__div--levy {
   margin: 10px 10px 10px 0;
 }
+@media screen and (max-width: 750px) {
+  .icons__div--levy {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
 
 .icons__div--prostredni {
   margin: 10px;
+}
+@media screen and (max-width: 750px) {
+  .icons__div--prostredni {
+    margin: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .icons__div--pravy {
   margin: 10px 0 10px 10px;
 }
+@media screen and (max-width: 750px) {
+  .icons__div--pravy {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
 
 .lectors__header {
-  color: #99D5FF;
+  color: #08295E;
   text-decoration: underline;
   text-align: center;
   font-size: 24px;
+  margin: 50px 20px;
+}
+@media screen and (max-width: 750px) {
+  .lectors__header {
+    margin-bottom: 0;
+  }
+}
+
+.lectors__bio {
+  display: flex;
+  margin: 50px 20px;
+}
+
+.lectors__popis {
+  flex: 0 1 50%;
+  padding: 50px;
+  text-align: justify;
+}
+
+.lectors__teacher {
+  max-width: 250px;
+  flex: 1 1 50%;
+  margin: auto;
+}
+
+.lectors__edu {
+  padding: 20px;
+  margin: auto;
+  margin-top: 40px;
+  background-color: #357DED;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 20px;
 }
 
 .table {
@@ -423,6 +495,20 @@ body {
     overflow: auto;
     margin: 0 0 1em;
   }
+}
+
+.table__rows--klik {
+  text-decoration: none;
+  color: #08295E;
+  font-size: 16px;
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+}
+
+.table__rows--klik:hover {
+  color: white;
+  background-color: #357DED;
 }
 
 .mapa {
@@ -521,6 +607,10 @@ body {
   text-align: justify;
 }
 
+.prispevek__header {
+  font-size: 16px;
+}
+
 .prispevek {
   display: grid;
   grid-template-columns: 250px 1fr;
@@ -565,18 +655,4 @@ body {
 
 .kurzy__seznam {
   margin-left: 20px;
-}
-
-.table__rows--klik {
-  text-decoration: none;
-  color: #08295E;
-  font-size: 16px;
-  padding: 20px;
-  border: 1px solid transparent;
-  border-radius: 50px;
-}
-
-.table__rows--klik:hover {
-  color: white;
-  background-color: #357DED;
 }/*# sourceMappingURL=style.css.map */

@@ -6,68 +6,8 @@
 @use "rozvrh";
 @use "kontakt";
 @use "kurz";
+@use "prispevek";
 
-
-.prispevek {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 30px;
-    margin: 20px;
-    
-}
-
-.prispevek img {
-    width: 100%;
-}
-
-.prispevek__minifoto {
-    border: 1px solid main.$cerna;
-}
-
-.prispevek__klik {
-    text-decoration: none;
-    color: main.$azur;
-    font-size: 16px;
-    padding: 15px;
-    margin-top: 10px;
-    background-color: black;
-}
-
-.prispevek__klik:hover .prispevek__klik {
-    color: main.$bila;
-}
-
-.prispevek__perex {
-    margin-bottom: 10px;
-    padding: 20px;
-    padding-left: 0;
-    padding-top: 0;
-}
-
-.clanek {
-    max-width: 600px;
-    margin: auto;
-    padding: 50px;
-    text-align: justify;
-}
-
-.kurzy__seznam {
-    margin-left: 20px;
-}
-
-.table__rows--klik {
-    text-decoration: none;
-    color: main.$secondary;
-    font-size: 16px;
-    padding: 20px;
-    border: 1px solid transparent;
-    border-radius: 50px;
-}
-
-.table__rows--klik:hover {
-    color: white;
-    background-color: main.$azur;
-}
 
 
 

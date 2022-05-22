@@ -5,6 +5,17 @@
     text-align: center;
 }
 
+.historie {
+    margin: auto;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.historie__text {
+    text-align: justify;
+}
+
 .icons {
     display: flex;
 
@@ -24,6 +35,10 @@
 
 .icons__text {
     text-align: center;
+
+    @media screen and (max-width: 750px) {
+        margin-bottom: 0;
+    }
 }
 
 .icons__right {
@@ -41,6 +56,11 @@
 .icons__header {
     flex-basis: 100%;
     font-size: 24px;
+
+    @media screen and (max-width: 750px) {
+        margin-bottom: 0;
+    }
+
 }
 
 .icons {
@@ -62,19 +82,66 @@
 
 .icons__div--levy {
     margin: 10px 10px 10px 0;
+
+    @media screen and (max-width: 750px) {
+        margin: 0;
+        margin-bottom: 10px;
+    }
 }
 
 .icons__div--prostredni {
     margin: 10px;
+
+    @media screen and (max-width: 750px) {
+        margin: 0;
+        margin-bottom: 10px;
+    }
 }
 
 .icons__div--pravy {
     margin: 10px 0 10px 10px;
+
+    @media screen and (max-width: 750px) {
+        margin: 0;
+        margin-bottom: 10px;
+    }
 }
 
 .lectors__header {
-    color: main.$modra;
+    color: main.$secondary;
     text-decoration: underline;
     text-align: center;
     font-size: 24px;
+    margin: 50px 20px;
+
+    @media screen and (max-width: 750px) {
+        margin-bottom: 0;
+    }
+}
+
+.lectors__bio {
+    display: flex;
+    margin: 50px 20px;
+}
+
+.lectors__popis{
+    flex: 0 1 calc(100% / 2);
+    padding: 50px;
+    text-align: justify;
+}
+
+.lectors__teacher {
+    max-width: 250px;
+    flex: 1 1 calc(100% / 2);
+    margin: auto;
+}
+
+.lectors__edu {
+    padding: 20px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: main.$azur;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 20px;
 }
