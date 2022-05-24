@@ -52,6 +52,7 @@
     color: main.$secondary;
     font-size: 16px;
     padding: 20px;
+    padding-top: 25px;
     border: 1px solid transparent;
     border-radius: 50px;
 }
@@ -59,4 +60,5 @@
 .table__rows--klik:hover {
     color: white;
     background-color: main.$azur;
+    
 }

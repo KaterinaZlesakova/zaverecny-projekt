@@ -430,6 +430,18 @@ body {
   display: flex;
   margin: 50px 20px;
 }
+@media screen and (max-width: 750px) {
+  .lectors__bio {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .lectors__bio--reverse {
+    flex-direction: column;
+  }
+}
 
 .lectors__popis {
   flex: 0 1 50%;
@@ -441,6 +453,8 @@ body {
   max-width: 250px;
   flex: 1 1 50%;
   margin: auto;
+  border: 1px solid #08295E;
+  box-shadow: 2px 2px 7px #1c2228;
 }
 
 .lectors__edu {
@@ -451,6 +465,11 @@ body {
   text-align: center;
   border: 1px solid transparent;
   border-radius: 20px;
+}
+
+.lectors__edu--klik {
+  text-decoration: underline;
+  color: #ffffff;
 }
 
 .table {
@@ -502,6 +521,7 @@ body {
   color: #08295E;
   font-size: 16px;
   padding: 20px;
+  padding-top: 25px;
   border: 1px solid transparent;
   border-radius: 50px;
 }
