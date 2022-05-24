@@ -1,7 +1,7 @@
 ---
 layout: page.njk
 title: Kódování (tvorba webových stránek)
-perex: Kódování je skvělý koníček i práce
+perex: Kódování je skvělý koníček i práce!
 foto: kodovani.png
 alt: Kódování
 tags: kurzy

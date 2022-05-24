@@ -1,7 +1,7 @@
 ---
 layout: page.njk
 title: Matematika
-perex: Matematika je věda
+perex: Matematika, to je věda!
 foto: matematika.jpg
 alt: Matematika
 tags: kurzy
