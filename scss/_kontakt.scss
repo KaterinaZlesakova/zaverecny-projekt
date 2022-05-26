@@ -4,6 +4,10 @@
 .mapa {
     margin: 50px;
     margin-left: 100px;
+
+    @media screen and (max-width: 750px) {
+        margin: 10px;
+    }
 }
 
 .kontakt__list {
@@ -18,12 +22,10 @@
     margin: auto;
 
     @media screen and (max-width: 750px) {
-        display: block;
+        display: flex;
         flex-wrap: wrap;
-
+        margin: 0px;
     }
-
-
 }
 
 .mapa, 
