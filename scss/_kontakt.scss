@@ -22,15 +22,21 @@
     margin: auto;
 
     @media screen and (max-width: 750px) {
-        display: flex;
         flex-wrap: wrap;
-        margin: 0px;
+        margin: 50px;
     }
 }
 
 .mapa, 
 .kontakt__list--right {
     flex: 0 1 50%;
+}
+
+.kontakt__list--right {
+    @media screen and (max-width: 750px) {
+        margin: 50px;
+        flex: 0 1 100%;
+    }
 }
 
 .kontakt__list--bold {
