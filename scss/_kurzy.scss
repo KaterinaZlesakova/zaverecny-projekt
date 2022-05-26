@@ -1,5 +1,5 @@
 @use "main";
-@use "kurz";
+@use "prispevek";
 
 .prispevek {
     display: grid;
@@ -9,8 +9,22 @@
 
     @media screen and (max-width: 750px) {
         display: grid;
-        grid-template-columns: 250px;
-        grid-template-rows: 250px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+.prispevek__header,
+.prispevek__perex {
+
+    @media screen and (max-width: 750px) {
+        text-align: center;
+    }
+}
+
+.prispevek__media {
+    @media screen (max-width: 750px) {
+        margin-left: 50px;
     }
 }
 
