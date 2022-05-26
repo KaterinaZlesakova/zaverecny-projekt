@@ -1,4 +1,4 @@
-@use 'main';
+@use "main";
 
 
 .mapa {
@@ -22,8 +22,7 @@
     margin: auto;
 
     @media screen and (max-width: 750px) {
-        flex-wrap: wrap;
-        margin: 50px;
+        margin: 10px;
     }
 }
 
