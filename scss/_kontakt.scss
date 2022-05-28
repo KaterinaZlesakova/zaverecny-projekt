@@ -6,7 +6,7 @@
     margin-left: 100px;
 
     @media screen and (max-width: 750px) {
-        margin: 10px;
+        margin: auto;
     }
 }
 
@@ -15,14 +15,19 @@
     margin: 50px;
     margin-left: 0;
     padding-left: 0;
-}
+
+    @media screen and (max-width: 750px) {
+        margin: auto;
+    }
+    }
 
 .kontakt__obsah {
     display: flex;
     margin: auto;
 
     @media screen and (max-width: 750px) {
-        margin: 10px;
+        flex-wrap: wrap;
+        margin: auto;
     }
 }
 
@@ -34,9 +39,20 @@
 .kontakt__list--right {
 
     @media screen and (max-width: 750px) {
-        margin: 50px;
+        display: flex;
+        flex-wrap: wrap;
         flex: 0 1 100%;
+        margin-top: 50px;
     }
+
+    .kontakt__list,
+    .kontakt__text {
+        @media screen and (max-width: 750px) {
+            flex: 0 1 100%;
+            text-align: center;
+        }
+    }
+
 }
 
 .kontakt__list--bold {

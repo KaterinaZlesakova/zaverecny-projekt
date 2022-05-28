@@ -502,7 +502,7 @@ body {
 }
 
 .table__rows {
-  padding: 20px;
+  padding: 30px;
 }
 
 /* ROZVRH HODIN */
@@ -524,9 +524,9 @@ body {
   text-decoration: none;
   color: #08295E;
   font-size: 16px;
-  padding: 20px;
-  padding-top: 25px;
+  padding: 25px 30px;
   border: 1px solid transparent;
+  border-radius: 10px;
 }
 
 .table__rows--klik:hover {
@@ -538,12 +538,22 @@ body {
   margin: 50px;
   margin-left: 100px;
 }
+@media screen and (max-width: 750px) {
+  .mapa {
+    margin: auto;
+  }
+}
 
 .kontakt__list {
   list-style-type: none;
   margin: 50px;
   margin-left: 0;
   padding-left: 0;
+}
+@media screen and (max-width: 750px) {
+  .kontakt__list {
+    margin: auto;
+  }
 }
 
 .kontakt__obsah {
@@ -552,14 +562,30 @@ body {
 }
 @media screen and (max-width: 750px) {
   .kontakt__obsah {
-    display: block;
     flex-wrap: wrap;
+    margin: auto;
   }
 }
 
 .mapa,
 .kontakt__list--right {
   flex: 0 1 50%;
+}
+
+@media screen and (max-width: 750px) {
+  .kontakt__list--right {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 100%;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .kontakt__list--right .kontakt__list,
+.kontakt__list--right .kontakt__text {
+    flex: 0 1 100%;
+    text-align: center;
+  }
 }
 
 .kontakt__list--bold {
@@ -619,8 +645,7 @@ body {
 
 @media screen and (max-width: 750px) {
   .prispevek__header,
-.prispevek__perex,
-.prispevek__media {
+.prispevek__perex {
     text-align: center;
   }
 }

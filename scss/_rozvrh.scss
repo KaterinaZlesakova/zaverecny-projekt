@@ -27,7 +27,7 @@
 }
 
 .table__rows {
-    padding: 20px;
+    padding: 30px;
 }
 
 /* ROZVRH HODIN */
@@ -51,9 +51,9 @@
     text-decoration: none;
     color: main.$secondary;
     font-size: 16px;
-    padding: 20px;
-    padding-top: 25px;
+    padding: 25px 30px;
     border: 1px solid transparent;
+    border-radius: 10px;
 }
 
 .table__rows--klik:hover {
