@@ -1,5 +1,4 @@
 @use "main";
-@use "prispevek";
 
 .prispevek {
     display: grid;
@@ -21,8 +20,6 @@
         text-align: center;
     }
 }
-
-
 
 .prispevek img {
     width: 100%;

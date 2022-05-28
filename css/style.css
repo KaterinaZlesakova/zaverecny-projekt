@@ -724,4 +724,44 @@ body {
 
 .prispevek__header {
   font-size: 16px;
+}
+
+.obsah__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+  padding: 20px;
+}
+@media screen and (max-width: 750px) {
+  .obsah__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.galerie__image {
+  max-width: 100%;
+  border: 1px solid #000000;
+}
+
+.galeri__main {
+  position: relative;
+}
+
+.galerie__description {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  opacity: 65%;
+  padding: 20px;
+  margin-top: 0;
+  position: absolute;
+  width: 200px;
+  bottom: 286px;
+}
+@media screen and (max-width: 750px) {
+  .galerie__description {
+    position: relative;
+    bottom: 353px;
+  }
 }/*# sourceMappingURL=style.css.map */
