@@ -24,6 +24,10 @@
 
 .table__header {
     padding: 5px;
+
+    @media screen and (max-width: 750px) {
+        padding: 20px;
+    }
 }
 
 .table__rows {
@@ -54,6 +58,10 @@
     padding: 25px 30px;
     border: 1px solid transparent;
     border-radius: 10px;
+
+    @media screen and (max-width: 750px) {
+        padding: 0;
+    }
 }
 
 .table__rows--klik:hover {
