@@ -613,30 +613,30 @@ body {
   flex-wrap: wrap;
 }
 
-.odeslat {
+.button {
   margin-top: 30px;
+  padding: 20px;
+  background-color: #357DED;
+  color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid transparent;
+}
+.button:hover {
+  background-color: #08295E;
+  text-decoration: underline;
+}
+.button:active {
+  background-color: #000000;
 }
 
 .email {
   margin-bottom: 20px;
 }
 
-.zprava {
-  /* margin-top: 30px; */
-}
-
-.label__e-mail,
-.label__zprava {
-  /* padding-right: 20px; */
-}
-
-.label__zprava {
-  /* padding-right: 54px; */
-}
-
 .label__prvni,
 .label__druhy {
   flex: 1 1 100%;
+  border-radius: 20px;
 }
 
 .prispevek {
@@ -675,6 +675,7 @@ body {
   padding: 15px;
   margin-top: 10px;
   background-color: black;
+  border-radius: 20px;
 }
 
 .prispevek__klik:hover .prispevek__klik {

@@ -70,28 +70,31 @@
     flex-wrap: wrap;
 }
 
-.odeslat {
+.button {
     margin-top: 30px;
+    padding: 20px;
+    background-color: main.$azur;
+    color: main.$bila;
+    border-radius: 20px;
+    border: 1px solid transparent;
+
+    &:hover {
+        background-color: main.$secondary;
+        text-decoration: underline;
+    }
+
+    &:active {
+        background-color: main.$cerna;
+    }
 }
+
 
 .email {
     margin-bottom: 20px;
 }
 
-.zprava {
-    /* margin-top: 30px; */
-}
-
-.label__e-mail,
-.label__zprava {
-    /* padding-right: 20px; */
-}
-
-.label__zprava {
-    /* padding-right: 54px; */
-}
-
 .label__prvni,
 .label__druhy {
     flex: 1 1 100%;
+    border-radius: 20px;
 }
