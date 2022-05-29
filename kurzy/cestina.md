@@ -20,7 +20,11 @@ Obsah kurzu je možné částečně přizpůsobit osazenstvu kurzu. Jakékoli po
 - Kdy probíhá: středa od 18:00 do 19:45
 - Cena: 3.000,- Kč
 
+<button class="button__back"><a class="button__back--klik" href="/kurzy/">ZPĚT</a></button>
+
 </div>
+
+
 
 
 

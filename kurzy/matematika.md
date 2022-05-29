@@ -27,5 +27,9 @@ Pořádáme 2 kurzy týkající se matematiky: matematika pro studenty, v rámci
 - Kdy probíhá: čtvrtek od 16:00 do 17:45
 - Cena: 5.000,- Kč
 
+<button class="button__back"><a class="button__back--klik" href="/kurzy/">ZPĚT</a></button>
+
 </div>
+
+
 

@@ -52,11 +52,35 @@
 
 .clanek {
     max-width: 600px;
-    margin: auto;
+    margin: 20px auto;
     padding: 50px;
     text-align: justify;
+    background: linear-gradient(main.$azur, main.$modra, main.$seda);
 }
 
 .kurzy__seznam {
     margin-left: 20px;
+}
+
+.button__back {
+    padding: 20px 30px;
+    background-color: main.$azur;
+    color: main.$bila;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    margin: auto;
+
+    &:hover {
+        background-color: main.$secondary;
+        text-decoration: underline;
+    }
+
+    &:active {
+        background-color: main.$cerna;
+    }
+}
+
+.button__back--klik {
+    text-decoration: none;
+    color: main.$bila;
 }

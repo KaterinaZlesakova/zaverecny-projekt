@@ -6,7 +6,6 @@
 }
 
 .header {
-    /* background: linear-gradient(main.$azur, main.$modra, main.$seda); */
     background-color: main.$doplnkova;
     padding: 50px;
     margin: 0px auto;
@@ -39,7 +38,12 @@
 
 .menu__item:hover {
     background-color: main.$azur;
-    color: main.$bila; /* TOTO Z NĚJAKÉHO ZÁHADNÉHO DŮVODU NEFUNGUJE - CHCI, ABY PŘI NAJETÍ SE ZBARVILY POLOŽKY - BARVA PÍSMA NA BÍLOU */
+    color: main.$bila;
+}
+
+.menu__item--active {
+    background-color: main.$doplnkova;
+    color: main.$bila;
 }
 
 .header__item {

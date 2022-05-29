@@ -18,14 +18,15 @@
 
 <nav class="menu">
     <ul class="menu__list">
-        <li class="menu__item"><a href="/" class="menu__link">Hlavní stránka</a></li>
-        <li class="menu__item"><a href="/ocentru/" class="menu__link">O centru</a></li>
-        <li class="menu__item"><a href="/kurzy/" class="menu__link">Nabízené kurzy</a></li>
-        <li class="menu__item"><a href="/rozvrh/" class="menu__link">Rozvrh kurzů</a></li>
-        <li class="menu__item"><a href="/fotogalerie/" class="menu__link">Fotogalerie</a></li>
-        <li class="menu__item"><a href="/kontakt/" class="menu__link">Kontakt</a></li>
+        <li class="menu__item {{ 'menu__item--active' if page.fileSlug === '' }}"><a href="/" class="menu__link">Hlavní stránka</a></li>
+        <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'ocentru' }}"><a href="/ocentru/" class="menu__link">O centru</a></li>
+        <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kurzy' }}"><a href="/kurzy/" class="menu__link">Nabízené kurzy</a></li>
+        <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'rozvrh' }}"><a href="/rozvrh/" class="menu__link">Rozvrh kurzů</a></li>
+        <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'fotogalerie' }}"><a href="/fotogalerie/" class="menu__link">Fotogalerie</a></li>
+        <li class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kontakt' }}"><a href="/kontakt/" class="menu__link">Kontakt</a></li>
     </ul>
 </nav>
+
 
 
 

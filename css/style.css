@@ -34,7 +34,6 @@ body {
 }
 
 .header {
-  /* background: linear-gradient(main.$azur, main.$modra, main.$seda); */
   background-color: #92cbf3;
   padding: 50px;
   margin: 0px auto;
@@ -69,7 +68,11 @@ body {
 .menu__item:hover {
   background-color: #357DED;
   color: #ffffff;
-  /* TOTO Z NĚJAKÉHO ZÁHADNÉHO DŮVODU NEFUNGUJE - CHCI, ABY PŘI NAJETÍ SE ZBARVILY POLOŽKY - BARVA PÍSMA NA BÍLOU */
+}
+
+.menu__item--active {
+  background-color: #92cbf3;
+  color: #ffffff;
 }
 
 .header__item {
@@ -691,13 +694,35 @@ body {
 
 .clanek {
   max-width: 600px;
-  margin: auto;
+  margin: 20px auto;
   padding: 50px;
   text-align: justify;
+  background: linear-gradient(#357DED, #99D5FF, #ECEAE9);
 }
 
 .kurzy__seznam {
   margin-left: 20px;
+}
+
+.button__back {
+  padding: 20px 30px;
+  background-color: #357DED;
+  color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  margin: auto;
+}
+.button__back:hover {
+  background-color: #08295E;
+  text-decoration: underline;
+}
+.button__back:active {
+  background-color: #000000;
+}
+
+.button__back--klik {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .course__content {

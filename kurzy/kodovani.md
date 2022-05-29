@@ -18,4 +18,7 @@ V kurzu se studenti naučí nakódovat si vlastní webovou stránku včetně nap
 - Kdy probíhá: středa od 14:00 do 17:45 (dvouhodinovka)
 - Cena: 5.000,- Kč
 
+<button class="button__back"><a class="button__back--klik" href="/kurzy/">ZPĚT</a></button>
+
 </div>
+

@@ -18,5 +18,9 @@ Kurz je vhodný pro studenty, kteří již mají základy anglického jazyka nap
 - Kdy probíhá: pondělí od 14:00 do 17:45 (dvouhodinovka)
 - Cena: 5.000,- Kč
 
+<button class="button__back"><a class="button__back--klik" href="/kurzy/">ZPĚT</a></button>
+
 </div>
+
+
 
