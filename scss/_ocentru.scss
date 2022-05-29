@@ -78,6 +78,8 @@
     background-color: main.$seda;
     max-height: 200px;
     flex: 0 1 calc(100% - 20px);
+    border: 1px solid transparent;
+    border-radius: 20px;
 
     @media screen and (max-width: 750px) {
         flex: 0 1 100%;
